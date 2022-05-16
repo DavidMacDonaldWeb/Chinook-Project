@@ -1,0 +1,24 @@
+@page
+@functions
+{
+    public string DayName { get; set; }
+    public void OnGet()
+    {
+        ViewData["Title"]= "Chinook Website";
+        Model.DayName = DateTime.Now.ToString("dddd");
+    }
+}
+<div class="jumbotron">
+    <h1 class="display-3">Welcome to Chinook Music!</h1>
+    <p class="lead">The Home of Music.</p>
+    <hr />
+    <p>It's @Model.DayName! Our database includes hundreds of artists!</p>
+    <p>
+        <a class ="btn btn-primary" href="/Albums/Albums">Albums</a>
+        @* <a class ="btn btn-primary" href="artist">Create Artists</a>*@
+         <a class ="btn btn-primary" href="/Artists/Artists">Artists</a>
+         <a class ="btn btn-primary" href="/Albums/Tracks">Tracks</a>
+    </p>
+
+</div>
+

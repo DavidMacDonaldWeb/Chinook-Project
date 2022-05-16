@@ -1,0 +1,76 @@
+@page "{id:int}"
+@model UWS.Shared.EditTrackModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Edit Track";
+}
+<div class="container">
+   <h3>Edit Track</h3>
+   <hr />
+   <br />
+   <form method="POST">
+      <input asp-for="Track.TrackID" type="hidden"/>
+      <div class="row">
+         <div class="col-md-4">
+            <label asp-for="Track.Name"></label>
+            <input asp-for="Track.Name" class="form-control" />
+         </div>
+      </div>
+      <br />
+      <div class="row">
+         <div class="col-md-4">
+            <label asp-for="Track.AlbumID" class="control-label">Confirm the Album</label>
+            <select asp-for="Track.AlbumID" class="form-control" 
+                     asp-items="@Model.AlbumNameSL">
+               <option value="">-- Album Name --</option>
+            </select>
+         </div>
+      </div>
+      <br />
+      <div class="row">
+         <div class="col-md-4">
+            <label asp-for="Track.MediaTypeID"></label>
+            <input asp-for="Track.MediaTypeID" class="form-control" />
+         </div>
+      </div>
+      <br />
+      <div class="row">
+         <div class="col-md-4">
+            <label asp-for="Track.GenreID"></label>
+            <input asp-for="Track.GenreID" class="form-control" />
+         </div>
+      </div>
+      <br />
+      <div class="row">
+         <div class="col-md-4">
+            <label asp-for="Track.Composer"></label>
+            <input asp-for="Track.Composer" class="form-control" />
+         </div>
+      </div>
+      <br />
+      <div class="row">
+         <div class="col-md-4">
+            <label asp-for="Track.Milliseconds"></label>
+            <input asp-for="Track.Milliseconds" class="form-control" />
+         </div>
+      </div>
+      <br />
+      <div class="row">
+         <div class="col-md-4">
+            <label asp-for="Track.Bytes"></label>
+            <input asp-for="Track.Bytes" class="form-control" />
+         </div>
+      </div>
+      <br />
+      <div class="row">
+         <div class="col-md-4">
+            <label asp-for="Track.UnitPrice"></label>
+            <input asp-for="Track.UnitPrice" class="form-control" />
+         </div>
+      </div>
+      <br />
+      <input type="submit" value="Save" class="btn btn-primary" />
+      <a class="btn btn-default" href="../tracks">Cancel</a>
+   </form>
+</div>

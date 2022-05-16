@@ -1,0 +1,24 @@
+@page "{id:int}"
+@model UWS.Shared.EditArtistModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Edit Artist";
+}
+<div class="container">
+   <h3>Edit Artist</h3>
+   <hr />
+   <br />
+   <form method="POST">
+      <input asp-for="Artist.ArtistID" type="hidden"/>
+      <div class="row">
+         <div class="col-md-4">
+            <label asp-for="Artist.Name"></label>
+            <input asp-for="Artist.Name" class="form-control" />
+         </div>
+      </div>
+      <br />
+      <input type="submit" value="Save" class="btn btn-primary" />
+      <a class="btn btn-default" href="../Artists">Cancel</a>
+   </form>
+</div>

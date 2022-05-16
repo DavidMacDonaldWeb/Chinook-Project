@@ -1,0 +1,71 @@
+@page
+@model UWS.Shared.CreateTrackModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Create Track";
+}
+<div class="container">
+   <h3>Add Track</h3>
+   <hr />
+   <br />
+   <form method="POST">
+      <div class="row">
+         <div class="col-md-4">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+             <label asp-for="Track.Name">Enter a Track name</label>
+            <input asp-for="Track.Name" class="form-control"/>
+            <span class="alert-danger" asp-validation-for="Track.Name"></span>
+            </div>  
+         </div>
+         <div class="col-md-4">
+            <label asp-for="Track.AlbumID" class="control-label">Select an Album</label>
+            <select asp-for="Track.AlbumID" class="form-control"
+                     asp-items=@Model.AlbumNameSL>
+               <option value="">-- Albums --</option>
+            </select>
+            <span class="alert-danger" asp-validation-for="Track.AlbumID"></span>
+         </div>
+         <div class="col-md-4">
+            <label asp-for="Track.MediaTypeID">Choose Media Type</label>
+            <select asp-for="Track.MediaTypeID" class="form-control"
+                     asp-items=@Model.MediaTypeNameSL>
+               <option value="">-- Media Type --</option>
+            </select>
+            <span class="alert-danger" asp-validation-for="Track.MediaTypeID"></span>
+         </div>
+         <div class="col-md-4">
+            <label asp-for="Track.GenreID">Choose a Genre</label>
+            <select asp-for="Track.GenreID" class="form-control"
+                     asp-items=@Model.GenreNameSL>
+               <option value="">-- Genre --</option>
+            </select>
+            <span class="alert-danger" asp-validation-for="Track.GenreID"></span>
+         </div>
+         <div class="col-md-4">
+            <label asp-for="Track.Composer">Enter a Composer</label>
+            <input asp-for="Track.Composer" class="form-control"/>
+            <span class="alert-danger" asp-validation-for="Track.Composer"></span>
+         </div>
+         <div class="col-md-4">
+            <label asp-for="Track.Milliseconds">Enter length of Track in milliseconds</label>
+            <input asp-for="Track.Milliseconds" class="form-control"/>
+            <span class="alert-danger" asp-validation-for="Track.Milliseconds"></span>
+         </div>
+         <div class="col-md-4">
+            <label asp-for="Track.Bytes">Enter track Bytes</label>
+            <input asp-for="Track.Bytes" class="form-control"/>
+            <span class="alert-danger" asp-validation-for="Track.Bytes"></span>
+         </div>
+         <div class="col-md-4">
+            <label asp-for="Track.UnitPrice">Enter price of unit</label>
+            <input asp-for="Track.UnitPrice" class="form-control"/>
+            <span class="alert-danger" asp-validation-for="Track.UnitPrice"></span>
+         </div>
+      </div>
+      <br />
+      <input type="submit" value="Save" class="btn btn-primary"/>
+      <a class="btn btn-primary" href="Tracks">Cancel</a>
+   </form>
+</div>

@@ -1,0 +1,40 @@
+C:\Users\david\CourseworkTwo\Entities\bin\Debug\netstandard2.0\Entities.deps.json
+C:\Users\david\CourseworkTwo\Entities\bin\Debug\netstandard2.0\Entities.dll
+C:\Users\david\CourseworkTwo\Entities\bin\Debug\netstandard2.0\Entities.pdb
+C:\Users\david\CourseworkTwo\Entities\obj\Debug\netstandard2.0\Entities.csprojAssemblyReference.cache
+C:\Users\david\CourseworkTwo\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfoInputs.cache
+C:\Users\david\CourseworkTwo\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfo.cs
+C:\Users\david\CourseworkTwo\Entities\obj\Debug\netstandard2.0\Entities.dll
+C:\Users\david\CourseworkTwo\Entities\obj\Debug\netstandard2.0\Entities.pdb
+C:\Users\david\Chinook-Project\Entities\bin\Debug\netstandard2.0\Entities.deps.json
+C:\Users\david\Chinook-Project\Entities\bin\Debug\netstandard2.0\Entities.dll
+C:\Users\david\Chinook-Project\Entities\bin\Debug\netstandard2.0\Entities.pdb
+C:\Users\david\Chinook-Project\Entities\obj\Debug\netstandard2.0\Entities.csprojAssemblyReference.cache
+C:\Users\david\Chinook-Project\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfoInputs.cache
+C:\Users\david\Chinook-Project\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfo.cs
+C:\Users\david\Chinook-Project\Entities\obj\Debug\netstandard2.0\Entities.dll
+C:\Users\david\Chinook-Project\Entities\obj\Debug\netstandard2.0\Entities.pdb
+C:\Users\david\Chinook-Project - Copy\Entities\bin\Debug\netstandard2.0\Entities.deps.json
+C:\Users\david\Chinook-Project - Copy\Entities\bin\Debug\netstandard2.0\Entities.dll
+C:\Users\david\Chinook-Project - Copy\Entities\bin\Debug\netstandard2.0\Entities.pdb
+C:\Users\david\Chinook-Project - Copy\Entities\obj\Debug\netstandard2.0\Entities.csprojAssemblyReference.cache
+C:\Users\david\Chinook-Project - Copy\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfoInputs.cache
+C:\Users\david\Chinook-Project - Copy\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfo.cs
+C:\Users\david\Chinook-Project - Copy\Entities\obj\Debug\netstandard2.0\Entities.dll
+C:\Users\david\Chinook-Project - Copy\Entities\obj\Debug\netstandard2.0\Entities.pdb
+C:\Users\david\Chinook-Project - Final - Copy\Entities\bin\Debug\netstandard2.0\Entities.deps.json
+C:\Users\david\Chinook-Project - Final - Copy\Entities\bin\Debug\netstandard2.0\Entities.dll
+C:\Users\david\Chinook-Project - Final - Copy\Entities\bin\Debug\netstandard2.0\Entities.pdb
+C:\Users\david\Chinook-Project - Final - Copy\Entities\obj\Debug\netstandard2.0\Entities.csprojAssemblyReference.cache
+C:\Users\david\Chinook-Project - Final - Copy\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfoInputs.cache
+C:\Users\david\Chinook-Project - Final - Copy\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfo.cs
+C:\Users\david\Chinook-Project - Final - Copy\Entities\obj\Debug\netstandard2.0\Entities.dll
+C:\Users\david\Chinook-Project - Final - Copy\Entities\obj\Debug\netstandard2.0\Entities.pdb
+C:\Users\david\Chinook-Project - Final\Entities\bin\Debug\netstandard2.0\Entities.deps.json
+C:\Users\david\Chinook-Project - Final\Entities\bin\Debug\netstandard2.0\Entities.dll
+C:\Users\david\Chinook-Project - Final\Entities\bin\Debug\netstandard2.0\Entities.pdb
+C:\Users\david\Chinook-Project - Final\Entities\obj\Debug\netstandard2.0\Entities.csprojAssemblyReference.cache
+C:\Users\david\Chinook-Project - Final\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfoInputs.cache
+C:\Users\david\Chinook-Project - Final\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfo.cs
+C:\Users\david\Chinook-Project - Final\Entities\obj\Debug\netstandard2.0\Entities.dll
+C:\Users\david\Chinook-Project - Final\Entities\obj\Debug\netstandard2.0\Entities.pdb

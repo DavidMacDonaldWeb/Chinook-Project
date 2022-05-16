@@ -1,0 +1,38 @@
+@page
+@model UWS.Shared.CreateAlbumModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Add Album";
+}
+
+<div class="container">
+    <h3>Add Album</h3>
+    <hr />
+    <br />
+    <form method="POST">
+        <div class="row">
+            <div class="col-md-4">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Album.Title"></label>
+                    <input asp-for="Album.Title" class="form-control"/>
+                    <br />
+                    <input type="submit" value="Save" class="btn btn-primary" />
+                    <a class="btn btn-primary" href="Albums">Cancel</a> 
+                    <span class="alert-danger" asp-validation-for="Album.Title"></span>
+                </div>                
+            </div>
+            <div class="form-group">
+                <label asp-for="Album.ArtistID" class="control-label">Select an artist</label>
+                <select asp-for="Album.ArtistID" class="form-control"
+                        asp-items=@Model.ArtistNameSL>
+                    <option value="">-- Select Artist --</option>
+                </select>
+                <br />
+                <a class="btn btn-primary" href="/Artists/CreateArtist">Create New Artist</a>
+                <span class="alert-danger" asp-validation-for="Album.ArtistID"></span>
+            </div>  
+        </div>   
+    </form>
+</div>

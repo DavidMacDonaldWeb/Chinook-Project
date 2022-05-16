@@ -1,0 +1,63 @@
+@page
+@model UWS.Shared.TrackDetailsModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+
+    ViewData["Title"] = "Track-Details";
+}
+
+<h2>Track List</h2>
+
+<p>
+    <a class="btn btn-primary" href="CreateTrack">Add New Track</a>
+</p>
+
+<div>
+    <h4>@Html.DisplayFor(model => model.Album.Title)</h4>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Track.Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Track.Composer)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Track.UnitPrice)
+                </th>
+                <th>
+                    <p>Edit | Delete</p>
+                </th>
+            </tr>
+        </thead>
+    </table>
+    <table class="table">
+        <tbody>
+            @foreach (var item in Model.Album.Tracks)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Composer)
+                    </td>
+                    <td>
+                        <p>£@Html.DisplayFor(modelItem => item.UnitPrice)</p>
+                    </td>
+                    <td>
+                   <a class="href" asp-page="./EditTrack" asp-route-id="@item.TrackID">Edit</a> |
+                   <a class="href" asp-page="./Tracks" onclick="return confirm('Are you sure you want to delete this Track?');"
+                    asp-page-handler="Delete" asp-route-id="@item.TrackID">Delete</a>
+                    </td>
+                </tr>    
+          }
+        </tbody>
+    </table>   
+   
+</div>
+<div>
+    <a class="btn btn-primary" href="Albums">Back to Albums</a>
+</div>
